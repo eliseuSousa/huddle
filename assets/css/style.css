@@ -1,0 +1,127 @@
+body {
+  min-height: 100vh;
+  background: var(--violet) url('../images/bg-desktop.svg') no-repeat center;
+  background-size: contain;
+  padding: 3.2rem 6.4rem;
+}
+
+header.cabecalho img.logo {
+  height: 4.2rem;
+  margin-bottom: 3.2rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main img.mockups {
+  height: 45rem;
+}
+
+div.conteudo {
+  max-width: 395px;
+}
+
+div.conteudo h1.titulo {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+div.conteudo p.paragrafo {
+  color: #f5e2f3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1.6rem;
+}
+
+div.conteudo button.register {
+  padding: 1rem 4.8rem;
+  color: var(--violet);
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border-radius: 3.2rem;
+  border: none;
+  box-shadow: 1px 2px 3px 3px rgb(64 66 76 / 0.54);
+  transition: all .3s;
+} 
+
+div.conteudo button.register:hover {
+  background: var(--soft-magenta);
+  color: #fff;
+  cursor: pointer;
+}
+
+footer nav.redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 3.2rem;
+}
+
+footer nav.redes-sociais div.logo {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-left: 1.2rem;
+  transition: all .3s;
+}
+
+footer nav.redes-sociais div.logo:hover {
+  border: 1px solid var(--soft-magenta);
+  cursor: pointer;
+}
+
+footer nav.redes-sociais div.logo svg {  
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: .8rem;
+  transition: all .3s;
+}
+
+footer nav.redes-sociais div.logo svg:hover path {
+  fill: var(--soft-magenta);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px){
+  body {
+    background: var(--violet) url('../images/bg-mobile.svg') no-repeat;
+    background-size: contain;
+    padding: 3.2rem 3.2rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main img.mockups {
+    height: 24rem;
+  }
+
+  div.conteudo {
+    text-align: center;
+    margin: 6.8rem 0;
+  }
+
+  div.conteudo h1.titulo {
+    font-size: 3.2rem;
+  }
+
+  div.conteudo p.paragrafo {
+    font-size: 1.9rem;
+    margin: 2.2rem 0;
+  }
+
+  div.conteudo button.register {
+    padding: 1.2rem 7.2rem;
+  }
+
+  footer nav.redes-sociais {
+    justify-content: center;
+  }
+}
