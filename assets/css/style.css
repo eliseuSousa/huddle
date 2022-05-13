@@ -17,7 +17,7 @@ main {
 }
 
 main img.mockups {
-  height: 55rem;
+  height: 48rem;
 }
 
 div.conteudo {
@@ -36,7 +36,7 @@ div.conteudo p.paragrafo {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  margin: 1.6rem;
+  margin: 1.6rem 0rem;
 }
 
 div.conteudo button.register {
